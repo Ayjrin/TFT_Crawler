@@ -1,0 +1,1 @@
+Delete this text and add your shiny new riot api key into this file. Get an api key here -> https://developer.riotgames.com/
