@@ -39,8 +39,9 @@ class RateLimiter:
 
 def save_state_to_file(data, filename):
     """Saves data to a file."""
-    with open(filename, 'w') as f:
+    with open(filename, 'r+') as f:
         json.dump(list(data), f)  # Convert set to list for JSON serialization
+    print(f"Data saved to {filename}.")
 
 def load_state_from_file(filename):
     """Loads data from a file, returning a list of dictionaries. If the file doesn't exist or is corrupt, returns an empty list."""
